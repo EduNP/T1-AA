@@ -52,14 +52,14 @@ void carregarVetor(char* nome, int** vetor, int* tamanho){
 
 }
 
-int main(void){
+// int main(void){
 
-    gerarVetor(pow(2,3),INT_MAX);
-    gerarVetor(pow(3,3),INT_MAX);
-    gerarVetor(pow(2,9),INT_MAX);
-    gerarVetor(pow(3,9),INT_MAX);
-    gerarVetor(pow(2,15),INT_MAX);
-    gerarVetor(pow(3,15),INT_MAX);
+//     gerarVetor(pow(2,3),INT_MAX);
+//     gerarVetor(pow(3,3),INT_MAX);
+//     gerarVetor(pow(2,9),INT_MAX);
+//     gerarVetor(pow(3,9),INT_MAX);
+//     gerarVetor(pow(2,15),INT_MAX);
+//     gerarVetor(pow(3,15),INT_MAX);
 
-    return 0;
-}
+//     return 0;
+// }
