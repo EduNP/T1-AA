@@ -19,7 +19,7 @@
 
 - [ ] Gerador
 
-<summary>Definições<summary>
+<summary>Definições</summary>
 
     - [ ] Definição das medidas
         - [ ] Tempo
@@ -29,7 +29,7 @@
         - [ ] Intervalo
         - [ ] Variação do tamanho
 
-<summary>Análises<summary>
+<summary>Análises</summary>
 
     - [ ] Estatísticas
         - [ ] Média
@@ -40,7 +40,7 @@
         - [ ] Pior caso
         - [ ] Médio caso (adicional)
     
-<summary>Demais<summary>
+<summary>Demais</summary>
 
     - [ ] Slides
 
