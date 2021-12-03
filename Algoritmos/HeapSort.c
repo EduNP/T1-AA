@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <string.h>
 #include "..\Gerador\Gerador.c"
 
 void MaxHeapify(int* A, int n, int i){
@@ -36,23 +38,14 @@ void HeapSort(int *A, int n){
 }
 
 int main(){
-    char teste[][50] = {"Vetor_8_2147483647.bin", "Vetor_27_2147483647.bin","Vetor_512_2147483647.bin", 
-    "Vetor_19683_2147483647.bin","Vetor_32768_2147483647.bin","Vetor_14348907_2147483647.bin"};
-
     int n;
     int* A;
-
-    carregarVetor("Vetor_14348907_2147483647.bin", &A, &n);
-    HeapSort(A,n);
-    for(int k = 0; k < n; k++)
-        printf("item (%d) = %d\n", k, A[k]);
-
-    for(int p = 0; p < n-1; p++){
-        if(A[p] > A[p+1])
-            printf("Deu ruim");
-    }
     
+        
+    carregarVetor("Vetor_.bin", &A, &n);
+    HeapSort(A,n);
+    //relatorio("NOME", tempo, numComp);
     free(A);
-   
+    
     return 0;
 }
