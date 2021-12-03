@@ -1,7 +1,7 @@
 // A função rearranja o vetor v[p..r], com p <= r+1,
 // de modo que ele fique em ordem crescente.
 
-void quicksort_it (int v[], int p, int r)
+void quicksort_it (int *v,int tam, int p, int r)
 {
    int j, *pilhap, *pilhar, t;
 
