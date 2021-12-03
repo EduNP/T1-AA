@@ -10,7 +10,7 @@ void gerarVetor(int tamanho, int max){
 
     char nome[50];
 
-    sprintf(nome,"..\\Vetores\\Vetor_%d_%d.bin",tamanho, max);
+    sprintf(nome,"..\\Vetores\\Vetor_%d.bin",tamanho);
 
     FILE* arquivo = fopen(nome,"wb");
 
@@ -52,14 +52,16 @@ void carregarVetor(char* nome, int** vetor, int* tamanho){
 
 }
 
-// int main(void){
+int main(void){
 
-//     gerarVetor(pow(2,3),INT_MAX);
-//     gerarVetor(pow(3,3),INT_MAX);
-//     gerarVetor(pow(2,9),INT_MAX);
-//     gerarVetor(pow(3,9),INT_MAX);
-//     gerarVetor(pow(2,15),INT_MAX);
-//     gerarVetor(pow(3,15),INT_MAX);
-
-//     return 0;
-// }
+    gerarVetor(pow(2,3),INT_MAX);
+    gerarVetor(pow(3,3),INT_MAX);
+    gerarVetor(pow(5,3),INT_MAX);
+    gerarVetor(pow(7,3),INT_MAX);
+    gerarVetor(pow(2,6),INT_MAX);
+    gerarVetor(pow(3,6),INT_MAX);
+    gerarVetor(pow(5,6),INT_MAX);
+    gerarVetor(pow(7,6),INT_MAX);
+    
+    return 0;
+}
