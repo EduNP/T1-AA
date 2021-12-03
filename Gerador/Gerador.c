@@ -14,7 +14,7 @@ void gerarVetor(int tamanho, int max){
 
     FILE* arquivo = fopen(nome,"wb");
 
-    valor = rand() & max;
+    valor = rand() % max;
 
     srand(time(0));
 
