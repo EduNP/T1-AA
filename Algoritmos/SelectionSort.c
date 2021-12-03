@@ -26,17 +26,16 @@ void selection_sort (int vetor[],int max) {
   printf ("\n");
 }
 
-main () {
-  int max, i;
-  /* Lê o máximo de algarismos do vetor*/
-  scanf ("%d",&max);
+main (int *vetor,int tam) {
+  int i;
   
-  int  vetor[max];
-  /* Lê os algarismos do vetor */
-  for (i = 0; i < max; i++) {
+  //scanf("%d",&tam);
+  //vetor = (int *) malloc(tam * sizeof(int));
+  
+  for (i = 0; i <tam; i++) {
     scanf ("%d",&vetor[i]);
   }
   
-  selection_sort (vetor, max);
+  selection_sort (vetor, tam);
   
 }
