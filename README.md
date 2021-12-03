@@ -10,40 +10,40 @@
 
 <h2>Atividades Realizadas<h2>
 
-- [] Algoritmos
-    - [] HeapSort
-    - [] InsertionSort
-    - [] MergeSort
-    - [] QuickSort
-    - [] SelectionSort
+- [ ] Algoritmos
+    - [ ] HeapSort
+    - [ ] InsertionSort
+    - [ ] MergeSort
+    - [ ] QuickSort
+    - [ ] SelectionSort
 
-- [] Gerador
+- [ ] Gerador
 
-- [] Definições
-    - [] Definição das medidas
-        - [] Tempo
-        - [] Número de comparações/trocas
-    - [] Definição da amostragem
-        - [] Intervalo
-        - [] Variação do tamanho
+- [ ] Definições
+    - [ ] Definição das medidas
+        - [ ] Tempo
+        - [ ] Número de comparações/trocas
+    - [ ] Definição da amostragem
+        - [ ] Intervalo
+        - [ ] Variação do tamanho
 
-- [] Análises
-    - [] Estatísticas
-        - [] Média
-        - [] Desvio padrão
-    - [] Dos casos
-        - [] Melhor caso
-        - [] Pior caso
-        - [] Médio caso (adicional)
+- [ ] Análises
+    - [ ] Estatísticas
+        - [ ] Média
+        - [ ] Desvio padrão
+    - [ ] Dos casos
+        - [ ] Melhor caso
+        - [ ] Pior caso
+        - [ ] Médio caso (adicional)
     
-- [] Demais
-    - [] Slides
-    - [] Relatório
-        - [] Implementação
-        - [] Amostragem
-        - [] Ferramentas estatísticas
-        - [] Resultados
-            - [] Tabelas
-            - [] Gráficos
-            - [] Discossão
+- [ ] Demais
+    - [ ] Slides
+    - [ ] Relatório
+        - [ ] Implementação
+        - [ ] Amostragem
+        - [ ] Ferramentas estatísticas
+        - [ ] Resultados
+            - [ ] Tabelas
+            - [ ] Gráficos
+            - [ ] Discossão
 
