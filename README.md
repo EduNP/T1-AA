@@ -12,50 +12,58 @@
 
 <details open>
 <summary>Algoritmos</summary>
-Teste
-</details>
 
-- [ ] Algoritmos
-    - [ ] HeapSort
-    - [ ] InsertionSort
-    - [ ] MergeSort
-    - [ ] QuickSort
-    - [ ] SelectionSort
+- [ ] HeapSort
+- [ ] InsertionSort
+- [ ] MergeSort
+- [ ] QuickSort
+- [ ] SelectionSort
+
+</details>
 
 - [ ] Gerador
 
-- [ ] Definições
+<details open>
+<summary>Definições</summary>
 
-    - [ ] Definição das medidas
-        - [ ] Tempo
-        - [ ] Número de comparações/trocas
+- [ ] Definição das medidas
+    - [ ] Tempo
+    - [ ] Número de comparações/trocas
     
-    - [ ] Definição da amostragem
-        - [ ] Intervalo
-        - [ ] Variação do tamanho
+- [ ] Definição da amostragem
+    - [ ] Intervalo
+    - [ ] Variação do tamanho
 
-- [ ] Análises
+</details>
 
-    - [ ] Estatísticas
-        - [ ] Média
-        - [ ] Desvio padrão
 
-    - [ ] Dos casos
-        - [ ] Melhor caso
-        - [ ] Pior caso
-        - [ ] Médio caso (adicional)
+<details open>
+<summary>Análises</summary>
+
+- [ ] Estatísticas
+    - [ ] Média
+    - [ ] Desvio padrão
+
+- [ ] Dos casos
+    - [ ] Melhor caso
+    - [ ] Pior caso
+    - [ ] Médio caso (adicional)
     
-- [ ] Demais
+</details>
 
-    - [ ] Slides
+<details open>
+<summary>Demais</summary>
 
-    - [ ] Relatório
-        - [ ] Implementação
-        - [ ] Amostragem
-        - [ ] Ferramentas estatísticas
+- [ ] Slides
 
-        - [ ] Resultados
-            - [ ] Tabelas
-            - [ ] Gráficos
-            - [ ] Discussão
+- [ ] Relatório
+    - [ ] Implementação
+    - [ ] Amostragem
+    - [ ] Ferramentas estatísticas
 
+    - [ ] Resultados
+        - [ ] Tabelas
+        - [ ] Gráficos
+         - [ ] Discussão
+
+</details>
