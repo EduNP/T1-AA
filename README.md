@@ -10,11 +10,10 @@
 
 <h2>Atividades Realizadas</h2>
 
-```{admonition} Algoritmos
-:class: dropdown
+<details open>
+<summary>Algoritmos</summary>
 Teste
-
-```
+</details>
 
 - [ ] Algoritmos
     - [ ] HeapSort
@@ -58,5 +57,5 @@ Teste
         - [ ] Resultados
             - [ ] Tabelas
             - [ ] Gráficos
-            - [ ] Discossão
+            - [ ] Discussão
 
