@@ -10,7 +10,9 @@
 
 <h2>Atividades Realizadas</h2>
 
-<details open>
+- [ ] Gerador
+
+<details>
 <summary>Algoritmos</summary>
 
 - [ ] HeapSort
@@ -21,9 +23,7 @@
 
 </details>
 
-- [ ] Gerador
-
-<details open>
+<details>
 <summary>Definições</summary>
 
 - [ ] Definição das medidas
@@ -37,7 +37,7 @@
 </details>
 
 
-<details open>
+<details>
 <summary>Análises</summary>
 
 - [ ] Estatísticas
@@ -51,7 +51,7 @@
     
 </details>
 
-<details open>
+<details>
 <summary>Demais</summary>
 
 - [ ] Slides
