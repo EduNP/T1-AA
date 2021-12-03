@@ -10,7 +10,13 @@
 
 <h2>Atividades Realizadas</h2>
 
-<summary>Algoritmos</summary>
+```{admonition} Algoritmos
+:class: dropdown
+Teste
+
+```
+
+- [ ] Algoritmos
     - [ ] HeapSort
     - [ ] InsertionSort
     - [ ] MergeSort
@@ -19,7 +25,7 @@
 
 - [ ] Gerador
 
-<summary>Definições</summary>
+- [ ] Definições
 
     - [ ] Definição das medidas
         - [ ] Tempo
@@ -29,7 +35,7 @@
         - [ ] Intervalo
         - [ ] Variação do tamanho
 
-<summary>Análises</summary>
+- [ ] Análises
 
     - [ ] Estatísticas
         - [ ] Média
@@ -40,7 +46,7 @@
         - [ ] Pior caso
         - [ ] Médio caso (adicional)
     
-<summary>Demais</summary>
+- [ ] Demais
 
     - [ ] Slides
 
