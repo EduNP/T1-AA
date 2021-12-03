@@ -14,7 +14,7 @@
 
 <details>
 <summary>Algoritmos</summary>
-
+</br>
 - [ ] HeapSort
 - [ ] InsertionSort
 - [ ] MergeSort
