@@ -44,7 +44,7 @@ int main(){
         
     carregarVetor("Vetor_.bin", &A, &n);
     HeapSort(A,n);
-    //relatorio("NOME", tempo, numComp);
+    //relatorio("NOME", tempo, numComp, tamanho);
     free(A);
     
     return 0;

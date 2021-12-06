@@ -1,63 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "..\Gerador\Gerador.c"
 void Intercala(int *v, int p, int q, int r) {
-   int temp[r-p+1];
 
-	int i = p, j = q+1, k = 0;
+   int tempVect[r-p];
+   for(int i = p; i < q; i++)
+      tempVect[i-p] = v[i];
+   
+   for(int j  = q; j < r;j++)
+      tempVect[r-p+q-j-1] = v[j];
 
-	while(i <= q && j <= r) {
-		if(v[i] <= v[j]) {
-			temp[k] = v[i];
-			k += 1; i += 1;
-		}
-		else {
-			temp[k] = v[j];
-			k += 1; j += 1;
-		}
-	}
-
-	while(i <= q) {
-		temp[k] = v[i];
-		k += 1; i += 1;
-	}
-
-	while(j <= r) {
-		temp[k] = v[j];
-		k += 1; j += 1;
-	}
-
-	for(i = p; i <= r; i += 1) {
-		v[i] = temp[i - p];
-	}
+   int iniPos = 0;
+   int endPos = r-p-1;
+   for(int k = p; k < r; k++){
+      if(tempVect[iniPos] <= tempVect[endPos])
+         v[k] = tempVect[iniPos++];
+      else
+         v[k] = tempVect[endPos--];
+      
+   }
 }
 
-void Mergesort(int *v,int p,int r,int tam){
-   int q;
-
-   if (p < r) {  
-   q = (p+r)/2;
-   Mergesort(v, p, q,tam);
-   Mergesort(v, q+1, r,tam);
-   Intercala(v, p, q, r);
-   }else{
-      for(int i=0;i<tam;i++){
-         printf("%d ",v[i]);
-      }
-      return;
+void Mergesort(int *v,int p,int r){
+   if(p < r-1){
+      int q = (p+r)/2;
+      Mergesort(v,p,q);
+      Mergesort(v,q,r);
+      Intercala(v,p,q,r);
    }
 }
 
 int main(){
-   int i,inicio, fim,tam,*vet;
-   scanf("%d",&tam);
-   vet = (int *) malloc(tam * sizeof(int));
+   int n;
+   int* A;
+     
+   carregarVetor("Vetor_64.bin", &A, &n);
+   Mergesort(A,0,n);
    
-   for (i = 0; i <tam; i++) {
-    scanf ("%d",&vet[i]);
-  }
-  inicio = vet[0];
-  fim = vet[tam-1];
-  Mergesort(vet,inicio,fim,tam);
-  free(vet);
+   // for(int i = 0; i < n; i++)
+   //    printf("item(%d) = %d\n", i ,A[i]);
+
+   free(A);
+    
+   return 0;
 }
