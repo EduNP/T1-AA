@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "..\Gerador\Gerador.c"
 
 void selection_sort (int vetor[],int max) {
   int i, j, min, aux;
@@ -26,16 +27,17 @@ void selection_sort (int vetor[],int max) {
   printf ("\n");
 }
 
-main (int *vetor,int tam) {
+int main () {
   int i;
   
   //scanf("%d",&tam);
   //vetor = (int *) malloc(tam * sizeof(int));
   //TEESTAR COM GERADOR
+  carregarVetor("Vetor_8.bin",&v,&tam);
   for (i = 0; i <tam; i++) {
     scanf ("%d",&vetor[i]);
   }
   
   selection_sort (vetor, tam);
-  
+  free(v);
 }
