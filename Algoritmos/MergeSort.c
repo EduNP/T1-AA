@@ -37,9 +37,6 @@ int main(){
    carregarVetor("Vetor_64.bin", &A, &n);
    Mergesort(A,0,n);
    
-   // for(int i = 0; i < n; i++)
-   //    printf("item(%d) = %d\n", i ,A[i]);
-
    free(A);
     
    return 0;

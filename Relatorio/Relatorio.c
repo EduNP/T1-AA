@@ -1,19 +1,22 @@
 #include <stdio.h>
 
-void gerarRelatorioTeste(char* nome, char* condicao, int tamanhoVetor, int tempo, int comparacoes, int trocas){
+void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    FILE* arquivo = fopen("RelatorioTeste.txt","a+");
+    char novoNome[50];
+    sprintf(novoNome,"..\\Relatorio\\%s",nome);
 
-    fprintf(arquivo,"Algoritmo: %s\nCondição: %s\nTamanho do vetor: %d\nTempo de execução: %ds\nComparações realizadas: %d\nTrocas realizadas: %d\n\n", nome, condicao, tamanhoVetor, tempo, comparacoes, trocas);
+    FILE* arquivo = fopen(novoNome,"a+");
+
+    fprintf(arquivo,"Algoritmo:                    %s\nCondição:                     %s\nTamanho do vetor:             %d\nTempo de execução (microsec): %ld\nTempo de execução (sec):      %ld\nComparações realizadas:       %d\nTrocas realizadas:            %d\n\n", nome, condicao, tamanhoVetor, tempoMicroSec, tempoSec,comparacoes, trocas);
 
     fclose(arquivo);
 
 }
 
-int main(void){
+//   int main(void){
 
 
-    gerarRelatorio("Merge Sort","Totalmente desordenado",27,500,1000);
+//       gerarRelatorio("Merge Sort","Totalmente desordenado",10,27,30,500,1000);
 
-    return 0;
-}
+//       return 0;
+//   }
