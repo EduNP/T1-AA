@@ -10,15 +10,16 @@
 
 <h2>Atividades Realizadas</h2>
 
-- [ ] Gerador
+- [x] Gerador
+- [x] Relatorio
 
 <details>
 <summary>Algoritmos</summary>
 
 
-- [ ] HeapSort
-- [ ] InsertionSort
-- [ ] MergeSort
+- [x] HeapSort
+- [x] InsertionSort
+- [x] MergeSort
 - [ ] QuickSort
 - [ ] SelectionSort
 

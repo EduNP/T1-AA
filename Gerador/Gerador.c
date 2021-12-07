@@ -51,7 +51,7 @@ void carregarVetor(char* nome, int** vetor, int* tamanho){
     fclose(arquivo);
 
 }
-
+//ADICIONAR CASOS PIORES E MELHORES
 // int main(void){
 
 //     gerarVetor(pow(2,3),INT_MAX);

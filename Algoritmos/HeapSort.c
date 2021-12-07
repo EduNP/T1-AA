@@ -24,7 +24,7 @@ void MaxHeapify_Comp(int* A, int n, int i){
         int temp = A[i];
         A[i] = A[maior];
         A[maior] = temp;
-        totalTroca += 2;
+        totalTroca ++;
         MaxHeapify_Comp(A, n, maior);
     }
     totalComp += 3;
@@ -43,7 +43,7 @@ void HeapSort_Comp(int *A, int n){
         int temp = A[0];
         A[0] = A[i];
         A[i] = temp;
-        totalTroca += 2;
+        totalTroca ++;
         MaxHeapify_Comp(A,i,0);
         totalComp++;
     }
@@ -89,14 +89,14 @@ int main(){
     int* A;
     
     struct timeval begin,end;
-    carregarVetor("Vetor_27.bin", &A, &n);
+    carregarVetor("Vetor_15625.bin", &A, &n);
 
     gettimeofday(&begin,0);
     HeapSort(A,n);
     gettimeofday(&end,0);
     free(A);
 
-    carregarVetor("Vetor_27.bin", &A, &n);
+    carregarVetor("Vetor_15625.bin", &A, &n);
     HeapSort_Comp(A,n);
     free(A);
 

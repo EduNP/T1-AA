@@ -1,0 +1,64 @@
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 2
+Tempo de execução (sec):      0
+Comparações realizadas:       399
+Trocas realizadas:            107
+                           
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 3
+Tempo de execução (sec):      0
+Comparações realizadas:       399
+Trocas realizadas:            107
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 5
+Tempo de execução (sec):      0
+Comparações realizadas:       399
+Trocas realizadas:            107
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 2
+Tempo de execução (sec):      0
+Comparações realizadas:       399
+Trocas realizadas:            107
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 3
+Tempo de execução (sec):      0
+Comparações realizadas:       399
+Trocas realizadas:            107
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 3028
+Tempo de execução (sec):      0
+Comparações realizadas:       658245
+Trocas realizadas:            203791
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 3374
+Tempo de execução (sec):      0
+Comparações realizadas:       658245
+Trocas realizadas:            203791
+
+Algoritmo:                    HeapSort-Teste-1
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 3432
+Tempo de execução (sec):      0
+Comparações realizadas:       658245
+Trocas realizadas:            203791
+

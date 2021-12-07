@@ -5,9 +5,11 @@ void insertion_sort(int *v,int tam);
 // Insertion sort function
 int main(){
     int *v;
-    int i,tam=10;
+    int tam;
+    //testa gerador
     insertion_sort(v,tam);
-    for(i=0;i<tam;i++)
+
+    for(int i=0;i<tam;i++)
         printf("%d ",v[i]);
 }
 void insertion_sort(int *v,int tam){
