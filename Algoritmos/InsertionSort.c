@@ -1,16 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include "..\Gerador\Gerador.c"
+
 void insertion_sort(int *v,int tam);  
 // Função de Ordenação por Inserção
 // Insertion sort function
 int main(){
     int *v;
     int tam;
-    //testa gerador
+    
+    carregarVetor("Vetor_8.bin",&v,&tam);
     insertion_sort(v,tam);
 
     for(int i=0;i<tam;i++)
-        printf("%d ",v[i]);
+        printf("%d\n",v[i]);
+    
 }
 void insertion_sort(int *v,int tam){
     int i, j, chave; 

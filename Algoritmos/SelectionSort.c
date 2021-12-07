@@ -31,7 +31,7 @@ main (int *vetor,int tam) {
   
   //scanf("%d",&tam);
   //vetor = (int *) malloc(tam * sizeof(int));
-    //TEESTAR COM GERADOR
+  //TEESTAR COM GERADOR
   for (i = 0; i <tam; i++) {
     scanf ("%d",&vetor[i]);
   }

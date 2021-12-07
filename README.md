@@ -4,9 +4,8 @@
 
 - João Pedro Rodrigues Martins
 - Eduardo Neves Paschoal
-- João Vitor Amorin
-- Cezar Vinícius Mendes Vieira
 - João Vitor Robiatti Amorim
+- Cezar Vinícius Mendes Vieira
 
 <h2>Atividades Realizadas</h2>
 
