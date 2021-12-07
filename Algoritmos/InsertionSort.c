@@ -15,6 +15,8 @@ int main(){
     for(int i=0;i<tam;i++)
         printf("%d\n",v[i]);
     
+    free(v);
+
 }
 void insertion_sort(int *v,int tam){
     int i, j, chave; 
