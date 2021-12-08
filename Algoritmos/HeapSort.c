@@ -90,22 +90,15 @@ int main(int argv, char* argc[]){
     // atoi(argc[1]) é o vetor
 
     struct timeval begin,end;
-<<<<<<< Updated upstream
-    carregarVetor(VectorFileName, &A, &n);
-=======
     carregarVetor(argc[1], &A, &n);
->>>>>>> Stashed changes
 
     gettimeofday(&begin,0);
     HeapSort(A,n);
     gettimeofday(&end,0);
     free(A);
-
-<<<<<<< Updated upstream
-    carregarVetor(VectorFileName, &A, &n);
-=======
+    
     carregarVetor(argc[1], &A, &n);
->>>>>>> Stashed changes
+
     HeapSort_Comp(A,n);
     free(A);
 
