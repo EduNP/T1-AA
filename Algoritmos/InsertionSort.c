@@ -35,10 +35,10 @@ void insertion_sort(int *v,int tam){
     }
 }
 
-int main(){
+int main(int argv, char* argc[]){
     int *v, n;
 
-    carregarVetor("Vetor_64.bin",&v,&n);
+    carregarVetor(argc[1],&v,&n);
     struct timeval begin,end;
 
     gettimeofday(&begin,0);
@@ -46,11 +46,11 @@ int main(){
     gettimeofday(&end,0);
     free(v);
 
-    carregarVetor("Vetor_64.bin",&v,&n);
+    carregarVetor(argc[1],&v,&n);
     insertion_sort_comp(v,n);
     free(v);
 
-    gerarRelatorio("InsertionSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+    gerarRelatorio("Insertion Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
     return 0;
 }

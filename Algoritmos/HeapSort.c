@@ -2,6 +2,7 @@
 #include <sys/time.h>
 #include "..\Gerador\Gerador.c"
 #include "..\Relatorio\Relatorio.c"
+#define VectorFileName "Vetor_117649.bin"
 
 int totalComp = 0; //total de condicionais
 int totalTroca = 0; //total que o vetor foi alterado
@@ -82,23 +83,26 @@ void HeapSort(int *A, int n){
     }
 }
 
-int main(){
+int main(int argv, char* argc[]){
     int n;
     int* A;
     
+    // atoi(argc[1]) é o vetor
+
     struct timeval begin,end;
-    carregarVetor("Vetor_15625.bin", &A, &n);
+    carregarVetor(argc[1], &A, &n);
 
     gettimeofday(&begin,0);
     HeapSort(A,n);
     gettimeofday(&end,0);
     free(A);
+    
+    carregarVetor(argc[1], &A, &n);
 
-    carregarVetor("Vetor_15625.bin", &A, &n);
     HeapSort_Comp(A,n);
     free(A);
 
-    gerarRelatorio("HeapSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+    gerarRelatorio("Heap Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
     
     return 0;
 }

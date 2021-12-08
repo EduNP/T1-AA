@@ -48,10 +48,10 @@ void selection_sort (int vetor[],int max) {
   }
 }
 
-int main () {
+int main (int argv, char* argc[]) {
   int *v, n;
 
-  carregarVetor("Vetor_64.bin",&v,&n);
+  carregarVetor(argc[1],&v,&n);
   struct timeval begin,end;
 
   gettimeofday(&begin,0);
@@ -59,9 +59,9 @@ int main () {
   gettimeofday(&end,0);
   free(v);
   
-  carregarVetor("Vetor_64.bin",&v,&n);
+  carregarVetor(argc[1],&v,&n);
   selection_sort_comp(v,n);
   free(v);
 
-  gerarRelatorio("SelectionSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+  gerarRelatorio("Selection Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 }
