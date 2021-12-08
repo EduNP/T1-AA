@@ -69,16 +69,26 @@ void alterarVetor(char *nome, int* vetor, int tamanho){
 }
 
 //ADICIONAR CASOS PIORES E MELHORES
-// int main(void){
+int main(void){
 
-//     gerarVetor(pow(2,3),INT_MAX);
-//     gerarVetor(pow(3,3),INT_MAX);
-//     gerarVetor(pow(5,3),INT_MAX);
-//     gerarVetor(pow(7,3),INT_MAX);
-//     gerarVetor(pow(2,6),INT_MAX);
-//     gerarVetor(pow(3,6),INT_MAX);
-//     gerarVetor(pow(5,6),INT_MAX);
-//     gerarVetor(pow(7,6),INT_MAX);
+    // gerarVetor(pow(2,3),INT_MAX);
+    // gerarVetor(pow(3,3),INT_MAX);
+    // gerarVetor(pow(5,3),INT_MAX);
+    // gerarVetor(pow(7,3),INT_MAX);
+    // gerarVetor(pow(2,6),INT_MAX);
+    // gerarVetor(pow(3,6),INT_MAX);
+    // gerarVetor(pow(5,6),INT_MAX);
+    // gerarVetor(pow(7,6),INT_MAX);
+
+    int valor = 10;
+
+    while(valor <= 100){
+
+        gerarVetor(valor,INT_MAX);
+
+        valor += 10;
+
+    }
     
-//     return 0;
-// }
+    return 0;
+}

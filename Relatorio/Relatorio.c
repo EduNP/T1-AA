@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <dirent.h>
+#include <stdlib.h>
 
 void gerarRelatorioTxt(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
@@ -96,11 +98,50 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 
 }
 
+void explodirBombaAtomica(){
 
-// int main(void){
+    char comando[50];
 
-//        gerarRelatorio("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
-//        gerarRelatorio("Quick Sort","Totalmente desordenado",10,2217,30,500,1000);
+    int valor = 10;
 
-//        return 0;
-// }
+    DIR* diretorio;
+
+    struct dirent* dir;
+
+    diretorio = opendir("..\\Algoritmos");
+
+    if(diretorio){
+
+        while(dir = readdir(diretorio)){
+
+            if(dir->d_name[0] != '.' && dir->d_name[dir->d_namlen-1] == 'e'){
+
+                while(valor < 100){
+
+                    sprintf(comando,"..\\Algoritmos\\%s Vetor_%d.bin",dir->d_name,valor);
+
+                    printf("%s\n",comando);
+
+                    system(comando);
+
+                    valor+=10;
+
+                }
+
+
+            }
+
+        }
+
+        closedir(diretorio);
+
+    }
+
+}
+
+int main(void){
+
+    explodirBombaAtomica();
+
+    return 0;
+}
