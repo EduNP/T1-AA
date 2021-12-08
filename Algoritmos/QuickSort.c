@@ -33,7 +33,7 @@ int separa_aleatorio_comp(int v[], int p, int r) {
 void quicksort_aleatorio_comp(int v[], int p, int r){
    int j;
    if (p < r) {                   
-      separa_aleatorio_comp(v, p, r);   
+      j = separa_aleatorio_comp(v, p, r);   
       quicksort_aleatorio_comp(v, p, j-1);      
       quicksort_aleatorio_comp(v, j+1, r);     
    }
@@ -46,17 +46,21 @@ int separa_aleatorio (int v[], int p, int r) {
    int t, j = p;
    for (int k = p; /*A*/ k < r; ++k)
       if (v[k] <= c) {
-         t = v[j], v[j] = v[k], v[k] = t;
+         t = v[j];
+         v[j] = v[k];
+         v[k] = t;
          ++j; 
       } 
-   t = v[j], v[j] = v[r], v[r] = t;
+   t = v[j];
+   v[j] = v[r];
+   v[r] = t;
    return j; 
 }
 
 void quicksort_aleatorio (int v[], int p, int r){
    int j;
    if (p < r) {                   
-      separa_aleatorio(v, p, r);   
+      j = separa_aleatorio(v, p, r);   
       quicksort_aleatorio(v, p, j-1);      
       quicksort_aleatorio(v, j+1, r);     
    }
@@ -86,7 +90,7 @@ int separa_comp(int v[], int p, int r) {
 void quicksort_comp(int v[], int p, int r){
    int j;
    if (p < r) {                   
-      separa_comp(v, p, r);   
+      j = separa_comp(v, p, r);   
       quicksort_comp(v, p, j-1);      
       quicksort_comp(v, j+1, r);     
    }
@@ -98,17 +102,21 @@ int separa (int v[], int p, int r) {
    int t, j = p;
    for (int k = p; /*A*/ k < r; ++k)
       if (v[k] <= c) {
-         t = v[j], v[j] = v[k], v[k] = t;
+         t = v[j];
+         v[j] = v[k];
+         v[k] = t;
          ++j; 
       } 
-   t = v[j], v[j] = v[r], v[r] = t;
+   t = v[j];
+   v[j] = v[r];
+   v[r] = t;
    return j; 
 }
 
 void quicksort (int v[], int p, int r){
    int j;
    if (p < r) {                   
-      separa (v, p, r);   
+      j = separa (v, p, r);   
       quicksort (v, p, j-1);      
       quicksort (v, j+1, r);     
    }
@@ -117,24 +125,24 @@ void quicksort (int v[], int p, int r){
 int main(int argv, char* argc[]){
     int *v, n;
 // pivo aleatorio
-    carregarVetor(argc[1],&v,&n);
+     carregarVetor(argc[1],&v,&n);
     struct timeval begin,end;
 
-    gettimeofday(&begin,0);
-    quicksort_aleatorio(v,0,n);
-    gettimeofday(&end,0);
-    free(v);
+     gettimeofday(&begin,0);
+     quicksort_aleatorio(v,0,n-1);
+     gettimeofday(&end,0);
+     free(v);
 
-    carregarVetor(argc[1],&v,&n);
-    quicksort_aleatorio_comp(v,0,n);
-    free(v);
+     carregarVetor(argc[1],&v,&n);
+     quicksort_aleatorio_comp(v,0,n-1);
+     free(v);
 
     
-    long resultMicro = end.tv_usec-begin.tv_usec;
-    if(resultMicro < 0)
-       resultMicro += 1000000;
+     long resultMicro = end.tv_usec-begin.tv_usec;
+     if(resultMicro < 0)
+        resultMicro += 1000000;
 
-    gerarRelatorio("Quick Sort","Pivo-Aleatorio-Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+     gerarRelatorio("Quick Sort Pivo Aleatorio","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
 
 /// Analise pior caso
@@ -143,18 +151,18 @@ int main(int argv, char* argc[]){
 
    carregarVetor(argc[1],&v,&n);
    gettimeofday(&begin,0);
-   quicksort(v,0,n);
+   quicksort(v,0,n-1);
    gettimeofday(&end,0);
    free(v);
    
    carregarVetor(argc[1],&v,&n);
-   quicksort_comp(v,0,n);
+   quicksort_comp(v,0,n-1);
    free(v);
 
    resultMicro = end.tv_usec-begin.tv_usec;
    if(resultMicro < 0)
       resultMicro += 1000000;
-   gerarRelatorio("Quick Sort","Pivo-Fixo-Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+   gerarRelatorio("Quick Sort Pivo Fixo","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
     return 0;
 }
