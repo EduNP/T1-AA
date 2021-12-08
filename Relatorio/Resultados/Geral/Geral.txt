@@ -1,0 +1,256 @@
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             8
+Tempo de execução (microsec): 1
+Tempo de execução (sec):      0
+Comparações realizadas:       44
+Trocas realizadas:            18
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             8
+Tempo de execução (microsec): 0
+Tempo de execução (sec):      0
+Comparações realizadas:       44
+Trocas realizadas:            18
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             8
+Tempo de execução (microsec): 1
+Tempo de execução (sec):      0
+Comparações realizadas:       44
+Trocas realizadas:            18
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             8
+Tempo de execução (microsec): 1
+Tempo de execução (sec):      0
+Comparações realizadas:       44
+Trocas realizadas:            18
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 3
+Tempo de execução (sec):      0
+Comparações realizadas:       240
+Trocas realizadas:            107
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 2
+Tempo de execução (sec):      0
+Comparações realizadas:       240
+Trocas realizadas:            107
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 3
+Tempo de execução (sec):      0
+Comparações realizadas:       240
+Trocas realizadas:            107
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             27
+Tempo de execução (microsec): 3
+Tempo de execução (sec):      0
+Comparações realizadas:       240
+Trocas realizadas:            107
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             64
+Tempo de execução (microsec): 6
+Tempo de execução (sec):      0
+Comparações realizadas:       718
+Trocas realizadas:            327
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             64
+Tempo de execução (microsec): 5
+Tempo de execução (sec):      0
+Comparações realizadas:       718
+Trocas realizadas:            327
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             64
+Tempo de execução (microsec): 6
+Tempo de execução (sec):      0
+Comparações realizadas:       718
+Trocas realizadas:            327
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             64
+Tempo de execução (microsec): 7
+Tempo de execução (sec):      0
+Comparações realizadas:       718
+Trocas realizadas:            327
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             125
+Tempo de execução (microsec): 11
+Tempo de execução (sec):      0
+Comparações realizadas:       1642
+Trocas realizadas:            759
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             125
+Tempo de execução (microsec): 11
+Tempo de execução (sec):      0
+Comparações realizadas:       1642
+Trocas realizadas:            759
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             125
+Tempo de execução (microsec): 12
+Tempo de execução (sec):      0
+Comparações realizadas:       1642
+Trocas realizadas:            759
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             125
+Tempo de execução (microsec): 12
+Tempo de execução (sec):      0
+Comparações realizadas:       1642
+Trocas realizadas:            759
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             343
+Tempo de execução (microsec): 36
+Tempo de execução (sec):      0
+Comparações realizadas:       5534
+Trocas realizadas:            2596
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             343
+Tempo de execução (microsec): 35
+Tempo de execução (sec):      0
+Comparações realizadas:       5534
+Trocas realizadas:            2596
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             343
+Tempo de execução (microsec): 37
+Tempo de execução (sec):      0
+Comparações realizadas:       5534
+Trocas realizadas:            2596
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             343
+Tempo de execução (microsec): 37
+Tempo de execução (sec):      0
+Comparações realizadas:       5534
+Trocas realizadas:            2596
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             729
+Tempo de execução (microsec): 85
+Tempo de execução (sec):      0
+Comparações realizadas:       13386
+Trocas realizadas:            6329
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             729
+Tempo de execução (microsec): 147
+Tempo de execução (sec):      0
+Comparações realizadas:       13386
+Trocas realizadas:            6329
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             729
+Tempo de execução (microsec): 85
+Tempo de execução (sec):      0
+Comparações realizadas:       13386
+Trocas realizadas:            6329
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             729
+Tempo de execução (microsec): 119
+Tempo de execução (sec):      0
+Comparações realizadas:       13386
+Trocas realizadas:            6329
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 3642
+Tempo de execução (sec):      0
+Comparações realizadas:       423206
+Trocas realizadas:            203791
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 2790
+Tempo de execução (sec):      0
+Comparações realizadas:       423206
+Trocas realizadas:            203791
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 2821
+Tempo de execução (sec):      0
+Comparações realizadas:       423206
+Trocas realizadas:            203791
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             15625
+Tempo de execução (microsec): 2625
+Tempo de execução (sec):      0
+Comparações realizadas:       423206
+Trocas realizadas:            203791
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             117649
+Tempo de execução (microsec): 26733
+Tempo de execução (sec):      0
+Comparações realizadas:       3875316
+Trocas realizadas:            1878834
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             117649
+Tempo de execução (microsec): 27287
+Tempo de execução (sec):      0
+Comparações realizadas:       3875316
+Trocas realizadas:            1878834
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             117649
+Tempo de execução (microsec): 25201
+Tempo de execução (sec):      0
+Comparações realizadas:       3875316
+Trocas realizadas:            1878834
+
+Algoritmo:                    Heap Sort
+Condição:                     Aleatorio
+Tamanho do vetor:             117649
+Tempo de execução (microsec): 27363
+Tempo de execução (sec):      0
+Comparações realizadas:       3875316
+Trocas realizadas:            1878834
+
