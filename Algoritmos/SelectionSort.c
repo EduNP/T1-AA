@@ -1,5 +1,31 @@
 #include <stdio.h>
+#include <sys/time.h>
 #include "..\Gerador\Gerador.c"
+#include "..\Relatorio\Relatorio.c"
+
+int totalComp = 0;
+int totalTroca = 0;
+
+//versão para medir trocas e comparações
+void selection_sort_comp(int vetor[],int max) {
+  int i, j, min, aux;
+  
+  for (i = 0; i < (max - 1); i++) {
+    min = i;
+    for (j = i+1; j < max; j++) {
+      if (vetor[j] < vetor[min]) {
+            min = j;
+      }
+      totalComp++;
+    }
+    if (i != min) {
+        aux = vetor[i];
+        vetor[i] = vetor[min];
+        vetor[min] = aux;
+        totalTroca++;
+    }
+  }
+}
 
 void selection_sort (int vetor[],int max) {
   int i, j, min, aux;
@@ -10,34 +36,33 @@ void selection_sort (int vetor[],int max) {
     for (j = i+1; j < max; j++) {
       /* Caso tenha algum numero menor ele faz a troca do minimo*/
       if (vetor[j] < vetor[min]) {
-   min = j;
+            min = j;
       }
     }
     /* Se o minimo for diferente do primeiro numero não ordenado ele faz a troca para ordena-los*/
     if (i != min) {
-      aux = vetor[i];
-      vetor[i] = vetor[min];
-      vetor[min] = aux;
+        aux = vetor[i];
+        vetor[i] = vetor[min];
+        vetor[min] = aux;
     }
   }
-  /* Imprime o vetor ordenado */
-  for (i = 0; i < max; i++) {
-    printf ("%d ",vetor[i]);
-  }
-  printf ("\n");
 }
 
 int main () {
-  int i;
-  
-  //scanf("%d",&tam);
-  //vetor = (int *) malloc(tam * sizeof(int));
-  //TEESTAR COM GERADOR
-  carregarVetor("Vetor_8.bin",&v,&tam);
-  for (i = 0; i <tam; i++) {
-    scanf ("%d",&vetor[i]);
-  }
-  
-  selection_sort (vetor, tam);
+  int *v, n;
+
+  carregarVetor("Vetor_64.bin",&v,&n);
+  struct timeval begin,end;
+
+  gettimeofday(&begin,0);
+  selection_sort(v, n);
+  gettimeofday(&end,0);
   free(v);
+  //verifica vetor ordenado
+  
+  carregarVetor("Vetor_64.bin",&v,&n);
+  selection_sort_comp(v,n);
+  free(v);
+
+  gerarRelatorio("SelectionSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 }

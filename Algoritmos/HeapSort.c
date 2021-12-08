@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <sys/time.h>
-#include <string.h>
 #include "..\Gerador\Gerador.c"
 #include "..\Relatorio\Relatorio.c"
 
@@ -12,11 +11,12 @@ void MaxHeapify_Comp(int* A, int n, int i){
     int e = (2*i)+1; //vetor começa em 0
     int d = (2*i) + 2;
     int maior;
-    if(e < n && A[e] > A[i])
+
+    if(e < n && A[e] > A[i]) //comparação +1
         maior = e;
     else maior = i;
 
-    if(d < n && A[d] > A[maior])
+    if(d < n && A[d] > A[maior])//comparação +1
         maior = d;
 
 
@@ -27,13 +27,12 @@ void MaxHeapify_Comp(int* A, int n, int i){
         totalTroca ++;
         MaxHeapify_Comp(A, n, maior);
     }
-    totalComp += 3;
+    totalComp += 2;
 }
 
 void BuildMaxHeap_Comp(int* A, int n){
     for(int i = (n/2)-1; i >= 0; i--){
         MaxHeapify_Comp(A, (n-1), i);
-        totalComp++;
     }
 }
 
@@ -45,7 +44,6 @@ void HeapSort_Comp(int *A, int n){
         A[i] = temp;
         totalTroca ++;
         MaxHeapify_Comp(A,i,0);
-        totalComp++;
     }
 }
 
