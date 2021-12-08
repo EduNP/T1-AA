@@ -1,38 +1,45 @@
 // A função rearranja o vetor v[p..r], com p <= r+1,
 // de modo que ele fique em ordem crescente.
-void quicksort (int v[], int esq, int dir);
-int particione(int v[],int esq,int dir);
-void trocar(int v[],int i,int j);
+#include<stdio.h>
+#include<stdlib.h>
 int main(){
-   int n=10;
+   int op,n=10;
    int v[10]={50,10,40,20,60,70,80,8,9,10};
-   quicksort(v,0,n-1);
+   printf("1-Quicksort aleatorio\n2-QuickSort normal\nOpcao:");
+   scanf("%d",&op);
+   quicksort(v,0,n-1,op);
    for(int i=0;i<n;i++)
       printf("%d ",v[i]);
 }
-void quicksort (int v[], int esq, int dir){
-   if(esq<dir){
-      int j= particione(v,esq,dir);
-      quicksort(v,esq,j-1);
-      quicksort(v,j+1,dir);
-   }
+int separa (int v[], int p, int r) {
+   int c = v[r]; // pivô
+   int t, j = p;
+   for (int k = p; /*A*/ k < r; ++k)
+      if (v[k] <= c) {
+         t = v[j], v[j] = v[k], v[k] = t;
+         ++j; 
+      } 
+   t = v[j], v[j] = v[r], v[r] = t;
+   return j; 
 }
-int particione(int v[],int esq,int dir){
-   int i=esq+1;
-   int j=dir;
-   int pivo=v[esq];
-   while (i<=j){
-      if (v[i]<=pivo)i++;
-      else if(v[j]>pivo)j++;
-      else if(i<=j){
-         trocar(v,i,j);
-         i++;
-         j--;
-      }
-   }
+int separa_aleatorio (int v[], int p, int r) {
+   int i=rand()%(r+1);
+   int c = v[i]; // pivô
+   int t, j = p;
+   for (int k = p; /*A*/ k < r; ++k)
+      if (v[k] <= c) {
+         t = v[j], v[j] = v[k], v[k] = t;
+         ++j; 
+      } 
+   t = v[j], v[j] = v[r], v[r] = t;
+   return j; 
 }
-void trocar(int v[],int i,int j){
-   int aux=v[i];
-   v[i]=v[j];
-   v[j]=aux;
+void quicksort (int v[], int p, int r,int op){
+   int j;
+   if (p < r) {                   
+      if(op==1)  j=separa_aleatorio(v,p,r);
+      else j = separa (v, p, r);   
+      quicksort (v, p, j-1,op);      
+      quicksort (v, j+1, r,op);     
+   }
 }
