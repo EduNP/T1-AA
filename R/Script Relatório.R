@@ -11,29 +11,67 @@ menu=function(op){
   cat("\n5 - Quick_Sort:")
   
 }
-op <-3
+
+#alterar opcao de acordo com o algoritmo
+op <-4     
 menu(op)
 
 switch(op,
-       "1" = {arq<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Selection Sort/Selection Sort.csv")
+       "1" = {dados<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Selection Sort/Selection Sort.csv")
               nome<- "Selection_Sort"},
        
-       "2" = {arq<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Insertion Sort/Insertion Sort.csv")
+       "2" = {dados<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Insertion Sort/Insertion Sort.csv")
               nome<- "Insertion_Sort"},
        
-       "3" = {arq<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Merge Sort/Merge Sort.csv")
+       "3" = {dados<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Merge Sort/Merge Sort.csv")
               nome<- "Merge_Sort"},
        
-       "4" = {arq<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Heap Sort/Heap Sort.csv")
+       "4" = {dados<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Heap Sort/Heap Sort.csv")
               nome<- "Heap_Sort"},
        
-       "5" = {arq<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Quick Sort/Quick Sort.csv")
+       "5" = {dados<- read_csv("~/GitHub/T1-AA/Relatorio/Resultados/Quick Sort/Quick Sort.csv")
               nome<- "Quick_Sort"},
        
        stop("opção inválida")
 )
  
 
-plot(arq$`Tamanho do vetor`, arq$`Tempo de execução (microsec)`, 
+plot(dados$`Tamanho do vetor`, dados$`Tempo de execução (microsec)`, 
      xlab = "Tamanho do vetor", ylab = "Tempo de execução", 
      main = nome)
+
+#tempo de execução:
+x <- dados$`Tempo de execução (microsec)`
+#Média:
+mean(x)
+#Desvio padrão:
+sd(x)
+#Variância:
+var(x)
+
+#Comparações realizadas:
+x<- dados$`Comparações realizadas`
+#Média:
+mean(x)
+#Desvio padrão:
+sd(x)
+#Variância:
+var(x)
+
+#Trocas realizadas:
+x <- dados$`Trocas realizadas`
+#Média:
+mean(x)
+#Desvio padrão:
+sd(x)
+#Variância:
+var(x)
+
+
+
+#Média:   
+mean(dados[dados$`Tamanho do vetor` == 8, dados$`Tempo de execução (microsec)`])
+
+
+
+
