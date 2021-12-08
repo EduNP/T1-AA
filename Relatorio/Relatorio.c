@@ -3,7 +3,7 @@
 void gerarRelatorioTxt(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
     char novoNome[50];
-    sprintf(novoNome,"..\\Relatorio\\Resultados\\%s.txt",nome);
+    sprintf(novoNome,"..\\Relatorio\\Resultados\\%s\\%s.txt",nome, nome);
 
     FILE* arquivo = fopen(novoNome,"a+");
 
@@ -17,7 +17,7 @@ void gerarRelatorioCsv(char* nome, char* condicao, int tamanhoVetor, long tempoM
 
     char novoNome[50];
 
-    sprintf(novoNome,"..\\Relatorio\\Resultados\\%s.csv",nome);
+    sprintf(novoNome,"..\\Relatorio\\Resultados\\%s\\%s.csv",nome, nome);
 
     FILE* arquivo = fopen(novoNome,"r");
 
@@ -43,9 +43,9 @@ void gerarRelatorioCsv(char* nome, char* condicao, int tamanhoVetor, long tempoM
 
 void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    gerarRelatorioTxt("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
+    gerarRelatorioTxt(nome,condicao,tamanhoVetor,tempoMicroSec,tempoSec,comparacoes,trocas);
 
-    gerarRelatorioCsv("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
+    gerarRelatorioCsv(nome,condicao,tamanhoVetor,tempoMicroSec,tempoSec,comparacoes,trocas);
 
 }
 
@@ -53,6 +53,7 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 int main(void){
 
        gerarRelatorio("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
+       gerarRelatorio("Quick Sort","Totalmente desordenado",10,2217,30,500,1000);
 
        return 0;
 }

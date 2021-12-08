@@ -1,8 +1,0 @@
-Algoritmo:                    HeapSort-Teste-1
-Condição:                     Aleatorio
-Tamanho do vetor:             15625
-Tempo de execução (microsec): 2631
-Tempo de execução (sec):      0
-Comparações realizadas:       423206
-Trocas realizadas:            203791
-

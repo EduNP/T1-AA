@@ -1,0 +1,2 @@
+Algoritmo,Condição,Tamanho do vetor,Tempo de execução (microsec),Tempo de execução (sec),Comparações realizadas,Trocas realizadas
+Quick Sort,Totalmente desordenado,10,2217,30,500,1000

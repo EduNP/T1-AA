@@ -1,8 +1,0 @@
-Algoritmo:                    SelectionSort-Teste-1
-Condição:                     Aleatorio
-Tamanho do vetor:             64
-Tempo de execução (microsec): 7
-Tempo de execução (sec):      0
-Comparações realizadas:       2016
-Trocas realizadas:            57
-
