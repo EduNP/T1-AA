@@ -34,8 +34,6 @@ void insertion_sort(int *v,int tam){
         v[i+1]=chave;
     }
 }
-<<<<<<< Updated upstream
-=======
 
 int main(){
     int *v, n;
@@ -56,4 +54,3 @@ int main(){
 
     return 0;
 }
->>>>>>> Stashed changes
