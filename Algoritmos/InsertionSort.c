@@ -35,10 +35,10 @@ void insertion_sort(int *v,int tam){
     }
 }
 
-int main(){
+int main(int argv, char* argc[]){
     int *v, n;
 
-    carregarVetor("Vetor_64.bin",&v,&n);
+    carregarVetor(arg[1],&v,&n);
     struct timeval begin,end;
 
     gettimeofday(&begin,0);
@@ -46,7 +46,7 @@ int main(){
     gettimeofday(&end,0);
     free(v);
 
-    carregarVetor("Vetor_64.bin",&v,&n);
+    carregarVetor(arg[1],&v,&n);
     insertion_sort_comp(v,n);
     free(v);
 
