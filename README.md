@@ -19,8 +19,8 @@
 - [x] HeapSort
 - [x] InsertionSort
 - [x] MergeSort
-- [ ] QuickSort
-- [ ] SelectionSort
+- [x] QuickSort
+- [x] SelectionSort
 
 </details>
 

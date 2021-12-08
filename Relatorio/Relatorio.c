@@ -4,7 +4,7 @@
 
 void gerarRelatorioTxt(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    char novoNome[50];
+    char novoNome[100];
 
     sprintf(novoNome,"..\\Relatorio\\Resultados\\%s\\%s.txt",nome, nome);
 
@@ -18,7 +18,7 @@ void gerarRelatorioTxt(char* nome, char* condicao, int tamanhoVetor, long tempoM
 
 void gerarRelatorioCsv(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    char novoNome[50];
+    char novoNome[100];
 
     sprintf(novoNome,"..\\Relatorio\\Resultados\\%s\\%s.csv",nome, nome);
 
@@ -46,7 +46,7 @@ void gerarRelatorioCsv(char* nome, char* condicao, int tamanhoVetor, long tempoM
 
 void gerarRelatorioGeralTxt(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    char novoNome[50];
+    char novoNome[100];
 
     sprintf(novoNome,"..\\Relatorio\\Resultados\\Geral\\Geral.txt");
 
@@ -60,7 +60,7 @@ void gerarRelatorioGeralTxt(char* nome, char* condicao, int tamanhoVetor, long t
 
 void gerarRelatorioGeralCsv(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
-    char novoNome[50];
+    char novoNome[100];
 
     sprintf(novoNome,"..\\Relatorio\\Resultados\\Geral\\Geral.csv");
 
@@ -100,7 +100,7 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 
 void explodirBombaAtomica(int max){
 
-    char comando[50];
+    char comando[100];
 
     int valor = 10;
 
@@ -143,7 +143,7 @@ void explodirBombaAtomica(int max){
 
 // int main(void){
 
-//     explodirBombaAtomica();
+//     explodirBombaAtomica(10000);
 
 //     return 0;
 // }
