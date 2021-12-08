@@ -3,6 +3,7 @@
 void gerarRelatorioTxt(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
     char novoNome[50];
+    
     sprintf(novoNome,"..\\Relatorio\\Resultados\\%s\\%s.txt",nome, nome);
 
     FILE* arquivo = fopen(novoNome,"a+");
