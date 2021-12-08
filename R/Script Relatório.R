@@ -13,7 +13,7 @@ menu=function(op){
 }
 
 #alterar opcao de acordo com o algoritmo
-op <-4     
+op <-3     
 menu(op)
 
 switch(op,
@@ -70,8 +70,17 @@ var(x)
 
 
 #Média:   
-mean(dados[dados$`Tamanho do vetor` == 8, dados$`Tempo de execução (microsec)`])
+library(dplyr)
 
+graph<- aggregate(dados$`Tempo de execução (microsec)`, list(dados$`Tamanho do vetor`), FUN = mean)
+plot(graph, 
+     xlab = "Tamanho do vetor", ylab = "Tempo de execução", 
+     main = nome)
+plot(graph$Group.1, graph$x, pch=19,xlab = "Tamanho do vetor", ylab = "Tempo de execução", xlim=c(0,1000), ylim=c(0,250), main='')
 
+dados %>%
+  group_by(dados$`Tamanho do vetor`) %>%
+  summarise_at(vars(dados$`Tempo de execução (microsec)`), list(name = mean))
 
+#print(dados)
 
