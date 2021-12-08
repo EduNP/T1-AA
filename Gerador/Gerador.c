@@ -82,7 +82,7 @@ int main(void){
 
     int valor = 10;
 
-    while(valor <= 100){
+    while(valor <= 10000){
 
         gerarVetor(valor,INT_MAX);
 
