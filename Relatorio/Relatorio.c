@@ -128,6 +128,8 @@ void explodirBombaAtomica(int max){
 
                 }
 
+                valor=10;
+
 
             }
 
