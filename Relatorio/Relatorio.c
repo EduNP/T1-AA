@@ -98,7 +98,7 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 
 }
 
-void explodirBombaAtomica(){
+void explodirBombaAtomica(int max){
 
     char comando[50];
 
@@ -116,7 +116,7 @@ void explodirBombaAtomica(){
 
             if(dir->d_name[0] != '.' && dir->d_name[dir->d_namlen-1] == 'e'){
 
-                while(valor <= 10000){
+                while(valor <= max){
 
                     sprintf(comando,"..\\Algoritmos\\%s Vetor_%d.bin",dir->d_name,valor);
 
@@ -141,7 +141,7 @@ void explodirBombaAtomica(){
 
 int main(void){
 
-    explodirBombaAtomica();
+    explodirBombaAtomica(10000);
 
     return 0;
 }
