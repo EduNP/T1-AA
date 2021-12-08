@@ -141,9 +141,9 @@ void explodirBombaAtomica(int max){
 
 }
 
-int main(void){
+// int main(void){
 
-    explodirBombaAtomica(10000);
+//     explodirBombaAtomica(10000);
 
-    return 0;
-}
+//     return 0;
+// }
