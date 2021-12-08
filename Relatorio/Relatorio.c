@@ -116,7 +116,7 @@ void explodirBombaAtomica(){
 
             if(dir->d_name[0] != '.' && dir->d_name[dir->d_namlen-1] == 'e'){
 
-                while(valor < 100){
+                while(valor <= 10000){
 
                     sprintf(comando,"..\\Algoritmos\\%s Vetor_%d.bin",dir->d_name,valor);
 
