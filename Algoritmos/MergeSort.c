@@ -81,7 +81,7 @@ int main(int argv, char* argc[]){
    Mergesort_comp(v,0,n);
    free(v);
 
-   gerarRelatorio("MergeSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+   gerarRelatorio("Merge Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
    return 0;
 }

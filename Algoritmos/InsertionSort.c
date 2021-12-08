@@ -50,7 +50,7 @@ int main(int argv, char* argc[]){
     insertion_sort_comp(v,n);
     free(v);
 
-    gerarRelatorio("InsertionSort-Teste-1","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+    gerarRelatorio("Insertion Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
     return 0;
 }
