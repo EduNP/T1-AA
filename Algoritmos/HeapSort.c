@@ -102,7 +102,11 @@ int main(int argv, char* argc[]){
     HeapSort_Comp(A,n);
     free(A);
 
-    gerarRelatorio("Heap Sort","Aleatorio",n,(long)(end.tv_usec-begin.tv_usec), (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+    long resultMicro = end.tv_usec-begin.tv_usec;
+    if(resultMicro < 0)
+       resultMicro += 1000000;
+
+    gerarRelatorio("Heap Sort","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
     
     return 0;
 }
