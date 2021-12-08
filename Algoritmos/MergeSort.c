@@ -69,7 +69,7 @@ void Mergesort(int *v,int p,int r){
 int main(int argv, char* argc[]){
    int *v, n;
 
-   carregarVetor(arg[1],&v,&n);
+   carregarVetor(argc[1],&v,&n);
    struct timeval begin,end;
 
    gettimeofday(&begin,0);
@@ -77,7 +77,7 @@ int main(int argv, char* argc[]){
    gettimeofday(&end,0);
    free(v);
 
-   carregarVetor(arg[1],&v,&n);
+   carregarVetor(argc[1],&v,&n);
    Mergesort_comp(v,0,n);
    free(v);
 
