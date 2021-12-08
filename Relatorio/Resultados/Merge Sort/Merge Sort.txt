@@ -1,8 +1,0 @@
-Algoritmo:                    Merge Sort
-Condição:                     Totalmente desordenado
-Tamanho do vetor:             10
-Tempo de execução (microsec): 2217
-Tempo de execução (sec):      30
-Comparações realizadas:       500
-Trocas realizadas:            1000
-

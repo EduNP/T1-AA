@@ -87,7 +87,7 @@ void gerarRelatorioGeralCsv(char* nome, char* condicao, int tamanhoVetor, long t
 void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicroSec, long tempoSec, int comparacoes, int trocas){
 
     gerarRelatorioTxt(nome,condicao,tamanhoVetor,tempoMicroSec,tempoSec,comparacoes,trocas);
-
+    
     gerarRelatorioGeralTxt(nome,condicao,tamanhoVetor,tempoMicroSec,tempoSec,comparacoes,trocas);
 
     gerarRelatorioCsv(nome,condicao,tamanhoVetor,tempoMicroSec,tempoSec,comparacoes,trocas);
@@ -96,11 +96,11 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 
 }
 
-int main(void){
 
-       gerarRelatorio("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
-       
-       gerarRelatorio("Quick Sort","Totalmente desordenado",10,2217,30,500,1000);
+// int main(void){
 
-       return 0;
-}
+//        gerarRelatorio("Merge Sort","Totalmente desordenado",10,2217,30,500,1000);
+//        gerarRelatorio("Quick Sort","Totalmente desordenado",10,2217,30,500,1000);
+
+//        return 0;
+// }
