@@ -51,6 +51,23 @@ void carregarVetor(char* nome, int** vetor, int* tamanho){
     fclose(arquivo);
 
 }
+
+void alterarVetor(char *nome, int* vetor, int tamanho){
+
+    sprintf(nome,"..\\Vetores\\%s",nome);
+
+    FILE* arquivo = fopen(nome,"r+b");
+
+    fseek(arquivo,0,0);
+
+    fwrite(&tamanho, sizeof(tamanho), 1, arquivo);
+
+    fwrite(vetor,sizeof(int), tamanho, arquivo);
+
+    fclose(arquivo);
+
+}
+
 //ADICIONAR CASOS PIORES E MELHORES
 // int main(void){
 
