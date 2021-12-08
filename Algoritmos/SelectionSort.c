@@ -58,7 +58,6 @@ int main () {
   selection_sort(v, n);
   gettimeofday(&end,0);
   free(v);
-  //verifica vetor ordenado
   
   carregarVetor("Vetor_64.bin",&v,&n);
   selection_sort_comp(v,n);
