@@ -145,9 +145,9 @@ int main(void){
 
     explodirBombaAtomica(10000, "aleatorio");
 
-    explodirBombaAtomica(10000, "ordenado");
+    explodirBombaAtomica(10000, "ordem-crescente");
 
-    explodirBombaAtomica(10000, "inversamente-ordenado");
+    explodirBombaAtomica(10000, "ordem-decrescente");
 
     return 0;
 }

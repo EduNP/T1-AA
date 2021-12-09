@@ -106,7 +106,7 @@ void gerarVetores(int passo, int max){
 
 }
 
-void ordenarVetores(int passo, int max){
+void crescenteOrdenarVetores(int passo, int max){
 
     int valor = passo, *A, tamanho;
 
@@ -120,7 +120,7 @@ void ordenarVetores(int passo, int max){
 
         quicksort(A,0,tamanho-1);
 
-        sprintf(nome,"Vetor-ordenado_%d.bin",valor);
+        sprintf(nome,"Vetor-ordem-crescente_%d.bin",valor);
 
         alterarVetor(nome,A,tamanho);
 
@@ -130,7 +130,7 @@ void ordenarVetores(int passo, int max){
 
 }
 
-void inversamenteOrdenarVetores(int passo, int max){
+void decrescenteOrdenarVetores(int passo, int max){
 
     char nome[100];
 
@@ -138,7 +138,7 @@ void inversamenteOrdenarVetores(int passo, int max){
 
     while(valor <= max){
 
-        sprintf(nome,"Vetor-ordenado_%d.bin",valor);
+        sprintf(nome,"Vetor-ordem-crescente_%d.bin",valor);
 
         carregarVetor(nome,&A,&tamanho);
 
@@ -150,7 +150,7 @@ void inversamenteOrdenarVetores(int passo, int max){
 
         }
 
-        sprintf(nome,"Vetor-inversamente-ordenado_%d.bin",valor);
+        sprintf(nome,"Vetor-inversamente-ordem-decrescente_%d.bin",valor);
 
         alterarVetor(nome,A,tamanho);
 
@@ -164,9 +164,9 @@ int main(void){
 
     gerarVetores(10,10000);
 
-    ordenarVetores(10,10000);
+    crescenteOrdenarVetores(10,10000);
 
-    inversamenteOrdenarVetores(10, 10000);
+    decrescenteOrdenarVetores(10, 10000);
 
     return 0;
 
