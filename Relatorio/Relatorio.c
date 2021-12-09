@@ -118,7 +118,7 @@ void explodirBombaAtomica(int max, char* tipo){
 
                 while(valor <= max){
 
-                    sprintf(comando,"..\\Algoritmos\\%s Vetor-%s_%d.bin %s", tipo, dir->d_name,valor, tipo);
+                    sprintf(comando,"..\\Algoritmos\\%s Vetor-%s_%d.bin %s",dir->d_name,tipo,valor, tipo);
 
                     printf("%s\n",comando);
 
@@ -141,13 +141,13 @@ void explodirBombaAtomica(int max, char* tipo){
 
 }
 
-// int main(void){
+int main(void){
 
-//     explodirBombaAtomica(10000, "aleatorio");
+    explodirBombaAtomica(10000, "aleatorio");
 
-//     explodirBombaAtomica(10000, "ordem-crescente");
+    explodirBombaAtomica(10000, "ordem-crescente");
 
-//     explodirBombaAtomica(10000, "ordem-decrescente");
+    explodirBombaAtomica(10000, "ordem-decrescente");
 
-//     return 0;
-// }
+    return 0;
+}

@@ -160,14 +160,14 @@ void decrescenteOrdenarVetores(int passo, int max){
 
 }
 
-int main(void){
+// int main(void){
 
-    gerarVetores(10,10000);
+//     gerarVetores(10,10000);
 
-    crescenteOrdenarVetores(10,10000);
+//     crescenteOrdenarVetores(10,10000);
 
-    decrescenteOrdenarVetores(10, 10000);
+//     decrescenteOrdenarVetores(10, 10000);
 
-    return 0;
+//     return 0;
 
-}
+// }
