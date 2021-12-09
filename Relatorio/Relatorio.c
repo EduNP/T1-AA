@@ -98,7 +98,7 @@ void gerarRelatorio(char* nome, char* condicao, int tamanhoVetor, long tempoMicr
 
 }
 
-void explodirBombaAtomica(int max){
+void explodirBombaAtomica(int max, char* tipo){
 
     char comando[100];
 
@@ -118,7 +118,7 @@ void explodirBombaAtomica(int max){
 
                 while(valor <= max){
 
-                    sprintf(comando,"..\\Algoritmos\\%s Vetor_%d.bin",dir->d_name,valor);
+                    sprintf(comando,"..\\Algoritmos\\%s Vetor-%s_%d.bin %s", tipo, dir->d_name,valor, tipo);
 
                     printf("%s\n",comando);
 
@@ -141,9 +141,13 @@ void explodirBombaAtomica(int max){
 
 }
 
-// int main(void){
+int main(void){
 
-//     explodirBombaAtomica(10000);
+    explodirBombaAtomica(10000, "aleatorio");
 
-//     return 0;
-// }
+    explodirBombaAtomica(10000, "ordenado");
+
+    explodirBombaAtomica(10000, "inversamente-ordenado");
+
+    return 0;
+}

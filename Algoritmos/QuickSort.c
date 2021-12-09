@@ -142,7 +142,7 @@ int main(int argv, char* argc[]){
      if(resultMicro < 0)
         resultMicro += 1000000;
 
-     gerarRelatorio("Quick Sort Pivo Aleatorio","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+     gerarRelatorio("Quick Sort Pivo Aleatorio",argc[2],n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
 
 /// Analise pior caso
@@ -162,7 +162,7 @@ int main(int argv, char* argc[]){
    resultMicro = end.tv_usec-begin.tv_usec;
    if(resultMicro < 0)
       resultMicro += 1000000;
-   gerarRelatorio("Quick Sort Pivo Fixo","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+   gerarRelatorio("Quick Sort Pivo Fixo",argc[2],n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
 
     return 0;
 }

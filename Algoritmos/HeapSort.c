@@ -106,7 +106,7 @@ int main(int argv, char* argc[]){
     if(resultMicro < 0)
        resultMicro += 1000000;
 
-    gerarRelatorio("Heap Sort","Aleatorio",n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
+    gerarRelatorio("Heap Sort",argc[2],n,resultMicro, (long)end.tv_sec - begin.tv_sec,totalComp,totalTroca);
     
     return 0;
 }
