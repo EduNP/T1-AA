@@ -141,13 +141,13 @@ void explodirBombaAtomica(int max, char* tipo){
 
 }
 
-int main(void){
+// int main(void){
 
-    explodirBombaAtomica(10000, "aleatorio");
+//     explodirBombaAtomica(10000, "aleatorio");
 
-    explodirBombaAtomica(10000, "ordem-crescente");
+//     explodirBombaAtomica(10000, "ordem-crescente");
 
-    explodirBombaAtomica(10000, "ordem-decrescente");
+//     explodirBombaAtomica(10000, "ordem-decrescente");
 
-    return 0;
-}
+//     return 0;
+// }

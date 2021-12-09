@@ -150,7 +150,7 @@ void decrescenteOrdenarVetores(int passo, int max){
 
         }
 
-        sprintf(nome,"Vetor-inversamente-ordem-decrescente_%d.bin",valor);
+        sprintf(nome,"Vetor-ordem-decrescente_%d.bin",valor);
 
         alterarVetor(nome,A,tamanho);
 
