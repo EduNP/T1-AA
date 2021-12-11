@@ -11,12 +11,14 @@ void insertion_sort_comp(int *v,int tam){
     for(j = 1; j < tam; j++){
         chave = v[j];
         i=j-1;
+        totalComp++;
         while(i>=0 && v[i]>chave){
             v[i+1]=v[i];
             i-=1;
             totalComp++;
             totalTroca++;
         }
+
         v[i+1]=chave;
         totalTroca++;
     }
