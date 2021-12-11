@@ -2,17 +2,6 @@
 
 #getwd()
 
-menu=function(op){
-  cat("Algoritmos:")
-  cat("\n1 - Selection_Sort")
-  cat("\n2 - Insertion_Sort")
-  cat("\n3 - Merge_Sort:")
-  cat("\n4 - Heap_Sort")
-  cat("\n5 - Quick_Sort:")
-  
-}
-menu(op)
-
 #alterar opcao de acordo com o algoritmo
 op <-2     
 
@@ -38,6 +27,9 @@ switch(op,
        
        stop("opção inválida")
 )
+#somar total de segundo*1000000 + Microsegundos
+dados$'Tempo total' = dados$`Tempo de execução (microsec)` + (1000000*dados$`Tempo de execução (sec)`)
+
 dados = subset(dados, Condição == 'aleatorio')
 #dados = subset(dados, Condição == 'ordem-decrescente')
 #dados = subset(dados, Condição == 'ordem-crescente')
@@ -47,19 +39,22 @@ plot(dados$`Tamanho do vetor`, dados$`Tempo de execução (microsec)`,
      main = nome)
 
 
+##TEMPOS DE EXECUÇÃO
 library(dplyr)
-graph<- aggregate(dados$`Tempo de execução (microsec)`, list(dados$`Tamanho do vetor`), FUN = mean)
+graph<- aggregate(dados$'Tempo total', list(dados$`Tamanho do vetor`), FUN = mean)
 #plot das médias
-plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução", main = bquote(.(nome) ~"- Médias"))
-
+plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = bquote(.(nome) ~"- Médias"))
 #plot com comparação de O(N)
-plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução", main = bquote(.(nome) ~"- Comparação"), pch = 18, col = "gray",xlim=c(0,10000),ylim=c(0,60000))
-
+plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = bquote(.(nome) ~"- Comparação"), pch = 18, col = "gray",xlim=c(0,10000),ylim=c(0,60000))
 par(new = TRUE)
 curve(x^2, from = 0, to = 10000, axes = FALSE, col = "red", ylab = "", xlab = "",lwd=2,xlim=c(0,10000),ylim=c(0,60000))
-
 par(new = TRUE)
 curve(x^1, from = 0, to = 10000, axes = FALSE,lwd=2, ylab = "", xlab = "" ,col = "green",xlim=c(0,10000),ylim=c(0,60000))
+
+
+
+
+
 
 
 #plot do gráfico com escala detalhada
