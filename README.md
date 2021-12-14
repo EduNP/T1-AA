@@ -27,13 +27,13 @@
 <details>
 <summary>Definições</summary>
 
-- [ ] Definição das medidas
-    - [ ] Tempo
-    - [ ] Número de comparações/trocas
+- [x] Definição das medidas
+    - [x] Tempo
+    - [x] Número de comparações/trocas
     
-- [ ] Definição da amostragem
-    - [ ] Intervalo
-    - [ ] Variação do tamanho
+- [x] Definição da amostragem
+    - [x] Intervalo
+    - [x] Variação do tamanho
 
 </details>
 
@@ -41,30 +41,29 @@
 <details>
 <summary>Análises</summary>
 
-- [ ] Estatísticas
-    - [ ] Média
-    - [ ] Desvio padrão
+- [x] Estatísticas
+    - [x] Média
 
-- [ ] Dos casos
-    - [ ] Melhor caso
-    - [ ] Pior caso
-    - [ ] Médio caso (adicional)
+- [x] Dos casos
+    - [x] Aleatório
+    - [x] Crescente
+    - [x] Decrescente
     
 </details>
 
 <details>
 <summary>Demais</summary>
 
-- [ ] Slides
+- [x] Slides
 
-- [ ] Relatório
-    - [ ] Implementação
-    - [ ] Amostragem
-    - [ ] Ferramentas estatísticas
+- [x] Relatório
+    - [x] Implementação
+    - [x] Amostragem
+    - [x] Ferramentas estatísticas
 
-    - [ ] Resultados
-        - [ ] Tabelas
-        - [ ] Gráficos
-         - [ ] Discussão
+    - [x] Resultados
+        - [x] Tabelas
+        - [x] Gráficos
+        - [x] Discussão
 
 </details>
