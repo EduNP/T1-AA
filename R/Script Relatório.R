@@ -3,7 +3,7 @@
 #getwd()
 
 #alterar opcao de acordo com o algoritmo
-op <-5     
+op <-2     
 
 library(readr)
 switch(op,
@@ -33,11 +33,11 @@ dados$'Tempo total' = dados$`Tempo de execução (microsec)` + (1000000*dados$`Tem
 #dados = subset(dados, Condição == 'aleatorio')
 #nome = bquote(.(nomeFile)~"- Vetores Aleatórios")
 
-#dados = subset(dados, Condição == 'ordem-decrescente')
-#nome = bquote(.(nomeFile)~"- Vetores Ordem Decrescente")
+dados = subset(dados, Condição == 'ordem-decrescente')
+nome = bquote(.(nomeFile)~"- Vetores Ordem Decrescente")
 
-dados = subset(dados, Condição == 'ordem-crescente')
-nome = bquote(.(nomeFile)~"- Vetores Ordem Crescente")
+#dados = subset(dados, Condição == 'ordem-crescente')
+#nome = bquote(.(nomeFile)~"- Vetores Ordem Crescente")
 
 plot(dados$`Tamanho do vetor`, dados$`Tempo de execução (microsec)`, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = nome)
 plot(dados$`Tamanho do vetor`, dados$`Trocas realizadas`, xlab = "Tamanho do vetor", ylab = "Número de trocas", main = nome)
@@ -50,15 +50,15 @@ graph<- aggregate(dados$'Tempo total', list(dados$`Tamanho do vetor`), FUN = mea
 plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = bquote(.(nome) ~"- Médias"))
 
 
-plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = bquote(.(nome) ~""), pch = 18, col = "gray",xlim=c(1,10000),ylim=c(0,5000))
+plot(graph, xlab = "Tamanho do vetor", ylab = "Tempo de execução (microsegundos)", main = bquote(.(nome) ~""), pch = 18, col = "gray",xlim=c(0,10000),ylim=c(0,60000))
 
-##MUDAR FUNÇÃO Melhor CASO
+##MUDAR FUNÇÃO pior caso
 par(new = TRUE)
-curve(x*(log(x,base = 2)), from = 1, to = 10000, axes = FALSE, col = "green", ylab = "", xlab = "",lwd=2,xlim=c(1,10000),ylim=c(0,5000))
+curve(x^2, from = 0, to = 10000, axes = FALSE, col = "red", ylab = "", xlab = "",lwd=2,xlim=c(0,10000),ylim=c(0,60000))
 
-##MUDAR FUNÇÃO Pior CASO
+##MUDAR FUNÇÃO melhor CASO
 par(new = TRUE)
-curve(x^2, from = 0, to = 10000, axes = FALSE,lwd=2, ylab = "", xlab = "" ,col = "red",xlim=c(1,10000),ylim=c(0,5000))
+curve(x^1, from = 0, to = 10000, axes = FALSE,lwd=2, ylab = "", xlab = "" ,col = "green",xlim=c(0,10000),ylim=c(0,60000))
 
 
 
